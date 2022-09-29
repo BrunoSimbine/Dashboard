@@ -1,0 +1,76 @@
+.progress-primary {
+  background: conic-gradient(#4e73df 144deg, #ededed 0deg);
+}
+
+.progress-primary > .radio-progress-value {
+  color: #4e73df;
+}
+
+
+.progress-secondary {
+  background: conic-gradient(#858796 144deg, #ededed 0deg);
+}
+
+.progress-secondary > .radio-progress-value {
+  color: #858796;
+}
+
+
+.progress-danger {
+  background: conic-gradient(#e74a3b 256deg, #ededed 0deg);
+}
+
+.progress-danger > .radio-progress-value {
+  color: #e74a3b;
+}
+
+
+.progress-warning {
+  background: conic-gradient(#f6c23e 144deg, #ededed 0deg);
+}
+
+.progress-warning > .radio-progress-value {
+  color: #f6c23e;
+}
+
+
+.progress-info {
+  background: conic-gradient(#36b9cc 144deg, #ededed 0deg);
+}
+
+.progress-info > .radio-progress-value {
+  color: #36b9cc;
+}
+
+.progress-success {
+  background: conic-gradient(#1cc88a 144deg, #ededed 0deg);
+}
+
+.progress-success > .radio-progress-value {
+  color: #1cc88a;
+}
+
+.radio-progress {
+  position: relative;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-progress::before {
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.radio-progress-value {
+  position: relative;
+  font-size: 12px;
+  font-weight: bold;
+}
