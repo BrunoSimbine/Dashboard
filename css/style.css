@@ -74,3 +74,62 @@
   font-size: 12px;
   font-weight: bold;
 }
+
+.skill-body {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.skill-progress {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.outer-skill-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner-skill-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+              inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+              -0.5px -0.5px 0px -1px rgba(0, 0, 0, 0.15),
+              0.5px 0.5px 0px -1px rgba(0, 0, 0, 0.05);
+}
+
+.text-skill-progress {
+  font-weight: 600;
+}
+
+.circle-skill-progress {
+  fill:none;
+  stroke: url("#gradient-skill-progress");
+  stroke-width: 15px;
+  stroke-dasharray: 460;
+  stroke-dashoffset: 0;
+  
+}
+
+.svg-skill-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
