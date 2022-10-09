@@ -33,3 +33,12 @@ new Chart(document.getElementById('canva'), {
     },
   },
 });
+
+const accordion = document.getElementsByClassName('accordion-expandable');
+
+console.log(accordion.length)
+for (i = 0; i < accordion.length; i++){
+  accordion[i].addEventListener('click', function() {
+    this.classList.toggle('active')
+  })
+}

@@ -133,3 +133,15 @@
   top: 0;
   left: 0;
 }
+
+.accordion-expandable .content-expandable {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion-expandable.active .content-expandable {
+  height: 100%;
+}
