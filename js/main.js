@@ -28,7 +28,6 @@ new Chart(document.getElementById('canva'), {
         position: 'bottom'
     },
     title: {
-      
       display: false,
       text: 'Contribuicao Mensal',
     },

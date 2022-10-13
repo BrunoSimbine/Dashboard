@@ -134,15 +134,34 @@
   left: 0;
 }
 
+
 .accordion-expandable .content-expandable {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+
   position: relative;
-  height: 0;
+  height: 0px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.75s;
   overflow-y: auto;
 }
 
-.accordion-expandable.active .content-expandable {
-  
-  height: 100%;
+.accordion-expandable.active > div > div > div > div:nth-child(3) > div > div  {
+  height: 90px
+}
+.accordion-expandable.active > div > div > div > div.col-auto.mt-3 > div.row.content-expandable {
+  height: 50px
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
 }
