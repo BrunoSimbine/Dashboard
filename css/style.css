@@ -143,5 +143,6 @@
 }
 
 .accordion-expandable.active .content-expandable {
+  
   height: 100%;
 }
